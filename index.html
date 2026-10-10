@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como ser uma pessoa melhor de caráter — e-book interativo</title>
+<meta name="description" content="Hábitos simples para crescer por dentro e conquistar o que você quer por fora. Um guia prático, real e sem filtro.">
+<meta property="og:title" content="Como ser uma pessoa melhor de caráter">
+<meta property="og:description" content="Um guia prático, real e sem filtro.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0B0B;--gr:#191817;--au:#D6B16A;--au2:#F0D49B;--tx:#F5F2EB;--mu:#AAA49B;--ln:rgba(214,177,106,.28);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:72px;height:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.7 Manrope,system-ui,sans-serif;min-height:100%;background-image:radial-gradient(ellipse at 80% 0,#2a2014 0,transparent 55%)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,6vw,4.6rem)}h2{font-size:clamp(1.9rem,4vw,3rem)}h3{font-size:1.5rem}
+p{margin:0 0 1em;max-width:62ch}a{color:var(--au2)}
+:focus-visible{outline:2px solid var(--au2);outline-offset:3px}
+.sr{position:absolute;left:-999px}
+header.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:.7rem 1.2rem;background:rgba(11,11,11,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
+.brand{font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--au);font-size:1.25rem;margin-right:auto;text-decoration:none}
+nav{display:flex;gap:.2rem;flex-wrap:wrap}
+nav a{color:var(--tx);text-decoration:none;font-size:.88rem;padding:.5rem .7rem;border-bottom:2px solid transparent;min-height:44px;display:flex;align-items:center}
+nav a:hover,nav a.on{border-color:var(--au)}
+#mb{display:none;background:none;border:1px solid var(--ln);color:var(--au);padding:.6rem .9rem;border-radius:6px;min-height:44px}
+@media(max-width:860px){#mb{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:#0B0B0Bf2;flex-direction:column;padding:.5rem 1rem}nav.open{display:flex}}
+main{max-width:1100px;margin:0 auto;padding:0 1.2rem 4rem}
+section{padding:4.5rem 0}
+.btn{font:700 .85rem Manrope;letter-spacing:.06em;border:1px solid var(--au);background:linear-gradient(#e2c07e,#b88f45);color:#1a1409;padding:.9rem 1.5rem;border-radius:4px;cursor:pointer;min-height:48px;display:inline-flex;align-items:center;transition:transform .2s,box-shadow .2s;box-shadow:0 6px 0 #6b5322,0 10px 24px rgba(214,177,106,.15)}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #6b5322}
+.btn.g{background:transparent;color:var(--au2);box-shadow:none}.btn.g:active{transform:scale(.98)}
+.btn[disabled]{opacity:.6;cursor:not-allowed}
+.row{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;min-height:calc(100vh - 70px);padding:2rem 0}
+@media(max-width:860px){.hero{grid-template-columns:1fr;min-height:0}}
+.hero .t{animation:in 1.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes in{from{opacity:0;transform:translateY(24px)}}
+.sub{color:var(--au2);font-size:1.15rem}.mu{color:var(--mu)}
+.stage{perspective:1100px;display:grid;place-items:center;padding:2rem 0;position:relative}
+.desk{position:absolute;inset:auto -5% 8% -5%;height:34%;background:linear-gradient(#3a2614,#1b1008);transform:rotateX(70deg);border-top:1px solid #6a4a2a;opacity:.7;border-radius:8px}
+.book{position:relative;width:min(260px,62vw);aspect-ratio:2/3;transform-style:preserve-3d;transform:rotateY(-24deg) rotateX(6deg);transition:transform .15s;animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{translate:0 -10px}}
+.book>div{position:absolute}
+.cv{inset:0;transform:translateZ(22px);background:linear-gradient(145deg,#1d1b19,#0b0b0b);border:1px solid var(--ln);padding:1.1rem;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
+.cv b{font:700 1.5rem/1.05 'Cormorant Garamond',serif;color:var(--tx)}.cv b i{font-style:normal;color:var(--au)}
+.cv small{color:var(--au2);font-size:.62rem;margin-top:.8rem;line-height:1.4}
+.cv:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(240,212,155,.18) 50%,transparent 60%);transform:translateX(var(--sh,-30%))}
+.bk{inset:0;transform:translateZ(-22px);background:#0b0b0b}
+.sd{width:44px;height:100%;left:-22px;transform:rotateY(-90deg);background:#14110d;border:1px solid var(--ln)}
+.pg{width:44px;height:96%;top:2%;right:-22px;transform:rotateY(90deg);background:repeating-linear-gradient(#efe6d2 0 2px,#cfc4aa 2px 3px)}
+.shadow{position:absolute;bottom:4%;width:60%;height:26px;background:radial-gradient(#000,transparent 70%);filter:blur(6px)}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+.card{background:linear-gradient(160deg,var(--gr),#0f0e0d);border:1px solid var(--ln);border-radius:6px;padding:1.4rem;color:inherit;text-align:left;font:inherit;cursor:pointer;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);border-color:var(--au)}
+.card svg{width:34px;height:34px;stroke:var(--au);fill:none;stroke-width:1.5;margin-bottom:.8rem}
+.card h3{font-size:1.25rem}.card p{font-size:.92rem;color:var(--mu);margin:0}
+.mods{display:grid;gap:1rem;margin-top:2rem}
+.mod{display:flex;gap:1.2rem;align-items:center;justify-content:space-between;flex-wrap:wrap;cursor:default}.mod:hover{transform:none}
+.mod small{color:var(--au)}
+dialog{background:var(--gr);color:var(--tx);border:1px solid var(--au);border-radius:8px;max-width:560px;width:calc(100% - 2rem);padding:1.6rem}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+.bar{height:8px;background:#2a2723;border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--au),var(--au2));transition:width .8s}
+.reader{display:grid;grid-template-columns:240px 1fr;gap:2rem;padding-top:2rem}
+@media(max-width:860px){.reader{grid-template-columns:1fr}}
+.toc{position:sticky;top:80px;align-self:start;font-size:.9rem}
+@media(max-width:860px){.toc{position:static}}
+.toc a{display:flex;gap:.5rem;padding:.5rem 0;color:var(--mu);text-decoration:none;border-bottom:1px solid #2a2723}
+.toc a.d{color:var(--au2)}
+.art{animation:sl .5s ease both}@keyframes sl{from{opacity:0;transform:translateX(30px)}}
+.art section{padding:1.6rem 0;border-top:1px solid #2a2723}
+.art p{font-size:1.1rem}
+blockquote{margin:1.4rem 0;padding:.4rem 0 .4rem 1.2rem;border-left:2px solid var(--au);font:600 1.6rem/1.25 'Cormorant Garamond',serif;color:var(--au2)}
+.box{background:#14110d;border:1px solid var(--ln);border-radius:6px;padding:1.2rem;margin:1rem 0}
+.box label.q{display:block;font-weight:700;margin-bottom:.5rem}
+textarea,input[type=text],input[type=date],input[type=email],select{width:100%;background:#0f0e0d;color:var(--tx);border:1px solid #4a443b;border-radius:4px;padding:.7rem;font:inherit;min-height:46px}
+textarea{min-height:100px;resize:vertical}
+.fld{margin-bottom:.8rem}.fld label{display:block;font-size:.85rem;color:var(--mu)}
+.chk{display:flex;gap:.6rem;align-items:center;margin:.5rem 0}.chk input{width:22px;height:22px}
+.msg{color:var(--au2);font-size:.9rem;min-height:1.4em}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.warn{border:1px dashed var(--au);padding:1rem;border-radius:6px;color:var(--au2);font-size:.95rem}
+li{margin:.3rem 0}
+footer{border-top:1px solid var(--ln);padding:2rem 1.2rem;color:var(--mu);font-size:.85rem;text-align:center}
+.rv{opacity:0;transform:translateY(20px);transition:.8s}.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="sr" href="#app">Pular para o conteúdo</a>
+<header class="nav"><a class="brand" href="#/">Caráter</a>
+<button id="mb" aria-expanded="false" aria-controls="nv">Menu</button>
+<nav id="nv" aria-label="Principal">
+<a href="#/" data-v="home">Início</a><a href="#/metodo" data-v="metodo">O método</a><a href="#/conteudo" data-v="conteudo">Conteúdo</a><a href="#/jornada" data-v="jornada">Minha jornada</a><a href="#/progresso" data-v="progresso">Meu progresso</a><a href="#/sobre" data-v="sobre">Sobre o projeto</a><a href="#/conta" data-v="conta">Boas-vindas</a>
+</nav></header>
+<main id="app" tabindex="-1"></main>
+<footer>Conteúdo-base: material “Descomplicando a Vida” (Equipe FalaAí &amp; Lucas). Textos marcados como <em>conteúdo adicional</em> não fazem parte do PDF. Seus dados ficam salvos somente neste dispositivo.</footer>
+<dialog id="dlg"></dialog>
+<script>
+const $=(s,r=document)=>r.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const K='cbp-v1';let S={done:{},refs:{},diary:[],habits:[],log:[],last:null};
+try{S=Object.assign(S,JSON.parse(localStorage.getItem(K)||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S));return true}catch(e){return false}};
+const act=t=>{S.log.unshift({t,d:new Date().toLocaleString('pt-BR')});S.log=S.log.slice(0,40)};
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const M=[
+{t:'Mentalidade e autoconhecimento',o:'Entender o que você sente e parar de se comparar com o que vê na tela.',src:'telas “Você não está sozinho nesse sentimento” e “O bastidor vs. o palco”.',s:[
+{h:'Você não está sozinho nesse sentimento',p:['O material apresenta dois dados: 78% relatam ansiedade constante, com preocupação excessiva com o futuro pessoal e profissional; e 62% sentem medo do amanhã, achando que estão ficando para trás em comparação aos outros.','Observação: o PDF não cita a fonte desses números. Leia-os como ponto de partida para pensar, não como pesquisa verificada.'],q:'A pressão por certezas precoces adoece. É hora de recalibrar as expectativas.'},
+{h:'O palco alheio e o seu bastidor',p:['O palco alheio mostra conquistas infladas no feed, viagens e contratações como métrica de sucesso, e um filtro constante: ninguém posta as crises.','O seu bastidor real tem processo humano, com dúvidas e dias lentos. É uma construção real, com erros que ensinam. E a sua velocidade é o único ritmo relevante.']},
+{h:'Exercício de autoconhecimento',ask:'a1',aq:'Quando foi a última vez que você se comparou com o “palco” de alguém? O que você sentiu, e o que seu bastidor tinha de diferente?'},
+{h:'Resumo do módulo',p:['Você não é o único a se sentir assim. O que os outros mostram é um recorte editado; o que você vive é o processo inteiro.']}]},
+{t:'Disciplina e hábitos diários',o:'Pequenas decisões consistentes pesam mais do que surtos temporários de produtividade.',src:'telas “Foco no possível: 1%” e “3 hábitos para ancorar o hoje”.',s:[
+{h:'O progresso diário invisível',p:['Segundo o material, o progresso diário invisível, de 1%, é o que sustenta a sua paz mental.','Pequenas decisões consistentes geram transformações maiores do que surtos temporários de produtividade.'],q:'1% por dia. Invisível hoje, sustentável amanhã.'},
+{h:'Três hábitos para ancorar o hoje',p:['Arrume a cama: a primeira vitória simbólica da manhã, para organizar a mente.','Cuide do básico: água, alimento e pausa. O corpo cansado sabota a mente.','Desconecte antes: troque 30 minutos de tela por descanso real antes de dormir.']},
+{h:'Exercício de planejamento pessoal',ask:'a2',aq:'Qual dos três hábitos você consegue cumprir amanhã? Em que momento do dia ele vai acontecer?',tool:1},
+{h:'Resumo do módulo',p:['Escolha um hábito pequeno o bastante para não virar peso. Repetir vale mais do que começar grande.']}]},
+{t:'Respeito, limites e relacionamentos',o:'Aprender a dizer não sem culpa e a cultivar relações que acolhem.',src:'telas “Limites saudáveis” e “Relações reais: qualidade > quantidade”.',s:[
+{h:'Limites saudáveis',p:['O material propõe uma ideia direta sobre limites: dizer “não” aos outros muitas vezes é a forma de dizer “sim” à sua saúde mental.'],q:'Dizer “não” também é cuidar.'},
+{h:'Qualidade acima de quantidade',p:['Dois amigos leais valem mais que mil seguidores.','Busque pessoas que acolhem suas vulnerabilidades.','Cultive conversas profundas fora do ambiente digital.']},
+{h:'Exercício de reflexão',ask:'a3',aq:'Existe algum “sim” que você deu esta semana e que gostaria de ter trocado por um “não”? Como você diria isso com respeito?'},
+{h:'Resumo do módulo',p:['Limites protegem você e a relação. Poucos vínculos verdadeiros sustentam mais do que muitos superficiais.']}]},
+{t:'Objetivos e evolução constante',o:'Mudar de rota sem culpa e seguir com leveza, um passo de cada vez.',src:'telas “Mudar de ideia não é fracassar”, “4 passos para viver com leveza” e “Respira fundo”.',s:[
+{h:'Mudar de ideia não é fracassar',p:['Trocar de curso, carreira ou meta é economizar anos em caminhos que não fazem mais sentido para você.'],q:'A vida é um rascunho contínuo, não uma prova final de múltipla escolha.'},
+{h:'Quatro passos para viver com leveza',p:['Passo 1, aceite o agora: reconheça onde você está, sem julgamentos.','Passo 2, filtre ruídos: silencie perfis e pressões externas.','Passo 3, ação micro: faça o próximo pequeno movimento real.','Passo 4, seja gentil: trate-se com a paciência que dá aos amigos.']},
+{h:'Compromisso consigo mesmo',ask:'a4',aq:'Qual é o próximo pequeno movimento real que você vai fazer esta semana?',tool:1},
+{h:'Conclusão',p:['Respira fundo. Você está fazendo o melhor que pode hoje. Não se cobre tanto por não ter todas as respostas. Ninguém tem. Continue caminhando no seu tempo.']}]}];
+const P=[
+['Mentalidade forte','Aprenda a observar seus pensamentos, desenvolver autoconsciência e agir com mais responsabilidade.','Hoje, ao sentir irritação ou ansiedade, pare por um minuto e escreva em uma frase o que você está pensando. Só observe, sem se julgar.','<path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 3 4 3 3 0 0 0 5 1V4a3 3 0 0 0-3 0zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-3 4 3 3 0 0 1-5 1"/>'],
+['Autocuidado de verdade','Cuide de sua rotina, seus limites, sua saúde cotidiana e da maneira como trata a si mesmo.','Escolha um limite pequeno para hoje, como horário de desligar a tela, e cumpra-o.','<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>'],
+['Objetivos reais','Transforme intenções em metas claras e pequenas ações que possam ser realizadas.','Escreva uma meta e reduza-a até caber em 10 minutos. Faça essa versão hoje.','<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>'],
+['Evolução constante','Reconheça seus avanços, aprenda com seus erros e mantenha o compromisso com seu desenvolvimento.','No fim do dia, anote um avanço e um aprendizado. Pode ser pequeno.','<path d="M5 20V14M12 20V9M19 20V4"/>']];
+const tp=i=>M[i].s.length,dn=i=>M[i].s.filter((_,j)=>S.done[i+'-'+j]).length,pct=i=>Math.round(dn(i)/tp(i)*100);
+const total=()=>Math.round(M.reduce((a,_,i)=>a+dn(i),0)/M.reduce((a,_,i)=>a+tp(i),0)*100);
+const today=()=>new Date().toISOString().slice(0,10);
+const V={};
+V.home=()=>`<section class="hero"><div class="t"><h1>COMO SER UMA PESSOA MELHOR DE CARÁTER</h1><p class="sub">Hábitos simples para crescer por dentro e conquistar o que você quer por fora.</p><p class="mu">Você não precisa mudar tudo de uma vez. Precisa começar a escolher melhor, um dia de cada vez.</p><div class="row"><button class="btn" data-go="start">COMEÇAR MINHA JORNADA</button><button class="btn g" data-go="cont">CONHECER O CONTEÚDO</button></div><p class="mu" style="margin-top:1.2rem;font-size:.9rem">Um guia prático, real e sem filtro.</p></div>
+<div class="stage" id="stage" role="img" aria-label="Capa 3D do e-book Como ser uma pessoa melhor de caráter"><div class="desk"></div><div class="shadow"></div><div class="book" id="book"><div class="bk"></div><div class="sd"></div><div class="pg"></div><div class="cv"><small>E-BOOK</small><b>COMO SER UMA <i>PESSOA MELHOR</i> DE CARÁTER</b><small>Hábitos simples para crescer por dentro e conquistar o que você quer por fora.</small></div></div></div></section>
+<section id="metodo" class="rv"><h2>Uma vida melhor começa nas pequenas escolhas.</h2><p>Ser uma pessoa melhor não significa ser perfeito. Significa reconhecer seus erros, assumir suas responsabilidades e continuar aprendendo. O caráter se constrói nas decisões que tomamos, principalmente quando ninguém está olhando.</p>
+<div class="pillars">${P.map((p,i)=>`<button class="card" data-p="${i}"><svg viewBox="0 0 24 24" aria-hidden="true">${p[3]}</svg><h3>${p[0]}</h3><p>${p[1]}</p></button>`).join('')}</div></section>
+<section id="conteudo" class="rv"><h2>Quatro módulos, um de cada vez</h2><p class="mu">Organizados a partir do PDF “Descomplicando a Vida”, uma apresentação curta. Cada módulo reúne poucas telas do original; exercícios e resumos são conteúdo adicional.</p><div class="mods">${M.map((m,i)=>`<div class="card mod"><div><small>Módulo ${i+1} · ${pct(i)}% concluído</small><h3>${m.t}</h3><p>${m.o}</p></div><a class="btn" href="#/modulo/${i+1}" style="text-decoration:none">ABRIR</a></div>`).join('')}</div></section>
+<section id="sobre" class="rv"><h2>Evoluir não é se tornar perfeito. É aprender a agir melhor.</h2><p>Este projeto nasceu da ideia de que o crescimento pessoal não precisa ser complicado. Pequenas escolhas, repetidas com consciência, podem ajudar a construir uma rotina mais alinhada com aquilo em que acreditamos. A proposta deste guia é oferecer um espaço de reflexão, prática e evolução, sem fórmulas mágicas e sem a pressão de acertar sempre.</p></section>`;
+V.metodo=V.conteudo=V.sobre=V.home;
+V.modulo=n=>{const i=n-1,m=M[i];if(!m)return V.err();S.last=i;save();
+return `<div class="reader"><aside class="toc" aria-label="Índice do módulo"><b>Módulo ${n} de 4</b><div class="bar" role="progressbar" aria-valuenow="${pct(i)}" aria-valuemin="0" aria-valuemax="100"><i style="width:${pct(i)}%"></i></div><p class="mu" style="font-size:.85rem">${pct(i)}% concluído</p>${m.s.map((s,j)=>`<a href="#/modulo/${n}" data-t="t${j}" class="${S.done[i+'-'+j]?'d':''}">${S.done[i+'-'+j]?'✓':'○'} ${s.h}</a>`).join('')}<p style="margin-top:1rem"><a href="#/conteudo">Voltar ao índice</a></p></aside>
+<article class="art"><h1 style="font-size:clamp(2rem,5vw,3.2rem)">${m.t}</h1><p class="sub">${m.o}</p><p class="mu" style="font-size:.85rem">Fonte no PDF: ${m.src}</p>
+${m.s.map((s,j)=>`<section id="t${j}"><h2 style="font-size:1.8rem">${s.h}</h2>${(s.p||[]).map(x=>`<p>${x}</p>`).join('')}${s.q?`<blockquote>${s.q}</blockquote>`:''}
+${s.ask?`<div class="box"><label class="q" for="${s.ask}">${s.aq} <span class="mu">(conteúdo adicional)</span></label><textarea id="${s.ask}">${esc(S.refs[s.ask]||'')}</textarea><div class="row"><button class="btn g" data-sr="${s.ask}">Salvar minha reflexão</button><span class="msg" role="status" id="m-${s.ask}"></span></div></div>`:''}
+${s.tool?`<p><a href="#/jornada">Registrar no Meu Plano de Evolução</a></p>`:''}
+<label class="chk"><input type="checkbox" data-d="${i}-${j}" ${S.done[i+'-'+j]?'checked':''}> Marcar como concluído</label></section>`).join('')}
+<div class="row" style="margin-top:2rem"><a class="btn g" href="#/conteudo" style="text-decoration:none">Voltar ao índice</a>${i>0?`<a class="btn g" href="#/modulo/${n-1}" style="text-decoration:none">Anterior</a>`:''}${i<3?`<a class="btn" href="#/modulo/${n+1}" style="text-decoration:none">PRÓXIMO MÓDULO</a>`:''}</div></article></div>`};
+function habs(){return S.habits.length?S.habits.map((h,i)=>`<div class="box"><b>${esc(h.n)}</b> <span class="mu">· ${esc(h.f)} · desde ${esc(h.s||'—')}</span><p class="mu">${esc(h.m)} ${h.o?'— '+esc(h.o):''}</p><label class="chk"><input type="checkbox" data-h="${i}" ${h.days.includes(today())?'checked':''}> Hoje: ${esc(h.a||'fiz minha parte')}</label><p class="mu" style="font-size:.85rem">${h.days.length} dia(s) registrado(s)${h.days.length?': '+h.days.slice(-5).join(', '):''}</p><button class="btn g" data-rh="${i}">Remover</button></div>`).join(''):'<p class="mu">Nenhum hábito ainda. Comece com um só.</p>'}
+V.jornada=()=>`<section><h1 style="font-size:3rem">Minha jornada</h1><p class="mu">Suas anotações ficam só neste navegador, em privado. Nada é enviado a servidores.</p><div class="grid2"><div><h2>Meu Plano de Evolução</h2><div class="box"><div class="fld"><label for="hn">Nome do hábito</label><input type="text" id="hn"></div><div class="fld"><label for="hm">Motivo</label><input type="text" id="hm"></div><div class="fld"><label for="hf">Frequência desejada</label><select id="hf"><option>Todos os dias</option><option>Dias úteis</option><option>3x por semana</option><option>1x por semana</option></select></div><div class="fld"><label for="hd">Data de início</label><input id="hd" type="date" value="${today()}"></div><div class="fld"><label for="ha">Pequena ação diária</label><input type="text" id="ha"></div><div class="fld"><label for="ho">Observações</label><textarea id="ho"></textarea></div><button class="btn" id="addh">ADICIONAR HÁBITO</button> <span class="msg" role="status" id="hmsg"></span></div><div id="hl">${habs()}</div></div>
+<div><h2>Diário pessoal</h2><div class="box"><div class="fld"><label for="dd">Data</label><input id="dd" type="date" value="${today()}"></div><div class="fld"><label for="dr">Reflexão do dia</label><textarea id="dr"></textarea></div><div class="fld"><label for="dc">Pequena conquista</label><input type="text" id="dc"></div><div class="fld"><label for="dh">Hábito que deseja melhorar</label><input type="text" id="dh"></div><div class="fld"><label for="dp">Próximo passo</label><input type="text" id="dp"></div><button class="btn" id="addd">SALVAR NO DIÁRIO</button> <span class="msg" role="status" id="dmsg"></span></div>${S.diary.map(d=>`<div class="box"><b>${esc(d.d)}</b><p>${esc(d.r)}</p><p class="mu">Conquista: ${esc(d.c||'—')} · Melhorar: ${esc(d.h||'—')} · Próximo passo: ${esc(d.p||'—')}</p></div>`).join('')||'<p class="mu">Nenhuma entrada ainda. Escreva a primeira quando quiser.</p>'}</div></div></section>`;
+V.progresso=()=>{const n=S.last,t=total();return `<section><h1 style="font-size:3rem">Meu progresso</h1><div class="bar" role="progressbar" aria-valuenow="${t}" aria-valuemin="0" aria-valuemax="100"><i style="width:${t}%"></i></div><p>${t}% dos tópicos concluídos. Reflexões registradas: ${Object.values(S.refs).filter(Boolean).length}. Hábitos acompanhados: ${S.habits.length}.</p>
+${M.map((m,i)=>`<p>${pct(i)===100?'✓':'○'} Módulo ${i+1}: ${m.t} — ${pct(i)}%</p>`).join('')}
+<div class="row"><a class="btn" style="text-decoration:none" href="#/modulo/${(n??0)+1}">CONTINUAR DE ONDE PAREI</a><button class="btn g" id="rst">Redefinir progresso</button></div>
+<h2 style="margin-top:2rem">Histórico</h2>${S.log.length?`<ul>${S.log.map(l=>`<li>${esc(l.t)} <span class="mu">(${l.d})</span></li>`).join('')}</ul>`:'<p class="mu">Ainda sem atividades.</p>'}</section>`};
+V.conta=()=>`<section><h1 style="font-size:3rem">Boas-vindas</h1><p class="sub">Que bom que você está aqui. Vá no seu ritmo.</p><p>Comece pelo módulo 1 e avance quando quiser. Em cada módulo você pode marcar o que já leu, responder às reflexões e voltar de onde parou.</p><p>Em <a href="#/jornada">Minha jornada</a> ficam seu diário e seu plano de hábitos. Em <a href="#/progresso">Meu progresso</a> você vê o que já concluiu.</p><div class="box"><b>Sobre seus dados</b><p class="mu" style="margin:.4rem 0 0">Suas respostas ficam salvas só neste aparelho e neste navegador. Se você trocar de celular ou limpar os dados do navegador, elas não vão junto.</p></div><a class="btn" href="#/modulo/1" style="text-decoration:none">COMEÇAR PELO MÓDULO 1</a></section>`;
+V.err=()=>`<section><h1>Página não encontrada</h1><p>Esse endereço não existe. <a href="#/">Voltar ao início</a></p></section>`;
+function route(){const h=location.hash.replace(/^#\/?/,''),[v,a]=h.split('/');const name=v||'home';const f=name==='modulo'?()=>V.modulo(+a):V[name]||V.err;
+$('#app').innerHTML=f();document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.v===(name==='modulo'?'conteudo':name)));
+$('#nv').classList.remove('open');$('#mb').setAttribute('aria-expanded','false');
+if(['metodo','conteudo','sobre'].includes(name))setTimeout(()=>document.getElementById(name)?.scrollIntoView({behavior:reduce?'auto':'smooth'}),30);else scrollTo(0,0);
+fx()}
+function fx(){const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.1});document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+const st=$('#stage'),b=$('#book');if(st&&!reduce){st.addEventListener('pointermove',e=>{const r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;b.style.transform=`rotateY(${-24+x*30}deg) rotateX(${6-y*20}deg)`;b.querySelector('.cv').style.setProperty('--sh',(x*100)+'%')});st.addEventListener('pointerleave',()=>b.style.transform='')}}
+addEventListener('hashchange',route);
+$('#mb').onclick=()=>{const o=$('#nv').classList.toggle('open');$('#mb').setAttribute('aria-expanded',o)};
+document.addEventListener('click',e=>{const a=e.target.closest('a[data-t]');if(a){e.preventDefault();document.getElementById(a.dataset.t)?.scrollIntoView({behavior:reduce?'auto':'smooth'});return}
+const t=e.target.closest('button,input[type=checkbox]');if(!t)return;
+if(t.dataset.go==='start')location.hash='#/modulo/1';
+if(t.dataset.go==='cont')location.hash='#/conteudo';
+if(t.dataset.p){const p=P[t.dataset.p],d=$('#dlg');d.innerHTML=`<h2>${p[0]}</h2><p>${p[1]}</p><div class="box"><b>Atividade prática</b> <span class="mu">(conteúdo adicional)</span><p>${p[2]}</p></div><button class="btn" id="cl">FECHAR</button>`;d.showModal();$('#cl').onclick=()=>d.close()}
+if(t.dataset.sr){const id=t.dataset.sr;S.refs[id]=$('#'+id).value;act('Reflexão salva');$('#m-'+id).textContent=save()?'Reflexão salva neste dispositivo.':'Não foi possível salvar: o armazenamento do navegador está bloqueado.'}
+if(t.dataset.d){S.done[t.dataset.d]=t.checked;act((t.checked?'Concluiu':'Desmarcou')+' o tópico '+t.dataset.d.replace('-','.'));save();const i=+t.dataset.d.split('-')[0];$('.bar i').style.width=pct(i)+'%'}
+if(t.id==='addh'){const n=$('#hn').value.trim();if(!n){$('#hmsg').textContent='Dê um nome ao hábito.';return}S.habits.push({n,m:$('#hm').value,f:$('#hf').value,s:$('#hd').value,a:$('#ha').value,o:$('#ho').value,days:[]});act('Novo hábito: '+n);save();$('#hl').innerHTML=habs();$('#hn').value='';$('#hmsg').textContent='Hábito adicionado.'}
+if(t.dataset.h!==undefined){const h=S.habits[t.dataset.h],d=today();h.days=t.checked?[...new Set([...h.days,d])]:h.days.filter(x=>x!==d);act((t.checked?'Marcou ':'Desfez ')+h.n);save();$('#hmsg').textContent=t.checked?'Hoje você fez a sua parte. Amanhã, recomece se for necessário.':'Marcação desfeita. Tudo bem.'}
+if(t.dataset.rh){S.habits.splice(t.dataset.rh,1);save();$('#hl').innerHTML=habs()}
+if(t.id==='addd'){const r=$('#dr').value.trim();if(!r){$('#dmsg').textContent='Escreva ao menos uma reflexão.';return}S.diary.unshift({d:$('#dd').value,r,c:$('#dc').value,h:$('#dh').value,p:$('#dp').value});act('Entrada no diário');save();route()}
+if(t.id==='rst'&&confirm('Apagar todo o progresso, reflexões, diário e hábitos deste dispositivo?')){S={done:{},refs:{},diary:[],habits:[],log:[],last:null};save();route()}});
+route();
+</script>
+</body>
+</html>
